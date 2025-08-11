@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UI version="4.0" >
+ <class>MosaicTheImageClass</class>
+ <widget class="QDialog" name="MosaicTheImageClass" >
+  <property name="objectName" >
+   <string notr="true">MosaicTheImageClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MosaicTheImage</string>
+  </property>$centralwidget$
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="MosaicTheImage.qrc"/>
+ </resources>
+ <connections/>
+</UI>
