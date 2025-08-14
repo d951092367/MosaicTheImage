@@ -27,20 +27,19 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 include_directories(${CMAKE_BINARY_DIR})
 
 # 添加 Qt 的 UI 文件和资源文件
-qt5_wrap_ui(MOSAIC_UI_FILES ${CMAKE_SOURCE_DIR}/resources/MosaicTheImage.ui)
-qt5_add_resources(MOSAIC_QRC_FILES ${CMAKE_SOURCE_DIR}/resources/MosaicTheImage.qrc)
+qt5_add_resources(MOSAIC_QRC_FILES ${CMAKE_SOURCE_DIR}/resources/ImageView_.qrc)
 
 # 添加源文件
 set(SOURCE_FILES
+    ${CMAKE_SOURCE_DIR}/src/ImageWidget.cpp
     ${CMAKE_SOURCE_DIR}/src/main.cpp
-    ${CMAKE_SOURCE_DIR}/src/MosaicTheImage.cpp
-    ${CMAKE_SOURCE_DIR}/src/CanvasLabel.cpp
+    ${CMAKE_SOURCE_DIR}/src/MainWindow.cpp
 )
 
 # 添加头文件
 set(HEADER_FILES
-    ${CMAKE_SOURCE_DIR}/include/MosaicTheImage.h
-    ${CMAKE_SOURCE_DIR}/include/CanvasLabel.h
+    ${CMAKE_SOURCE_DIR}/include/ImageWidget.h
+    ${CMAKE_SOURCE_DIR}/include/MainWindow.h
     ${CMAKE_SOURCE_DIR}/include/Tools.hpp
 )
 
